@@ -22,6 +22,8 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
 
+    #gem 'wdm', '>= 0.1.0' # Windows file watcher
+
     gem 'classifier-reborn'  # used for content categorization during the build
 end
 
