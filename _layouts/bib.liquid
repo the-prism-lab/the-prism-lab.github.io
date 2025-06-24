@@ -150,53 +150,64 @@
 
     <!-- Journal/Book title and date -->
     <div class="periodical">
-        {% if entry.type == 'article' %}
-            <span class="journal"><i>{{ entry.journal }}</i></span>
-        {% elsif proceedings contains entry.type %}
-            <span class="booktitle"><i>In {{ entry.booktitle }}</i></span>
-        {% elsif thesis contains entry.type %}
-            <span class="school"><i>{{ entry.school }}</i></span>
-        {% else %}
-            {% comment %} If no specific type, just output the journal/booktitle if it exists {% endcomment %}
-            {% if entry.journal %}<span class="journal"><i>{{ entry.journal }}</i></span>{% endif %}
-            {% if entry.booktitle %}<span class="booktitle"><i>{{ entry.booktitle }}</i></span>{% endif %}
-        {% endif %}
+        {%- assign periodical_string = "" -%}
 
-        {% if entry.year %}
-            <span class="year"> <b>{{ entry.year }}</b></span>
-        {% endif %}
+        {%- comment -%} Add Journal/Booktitle/School - this is the first item -{% endcomment -%}
+        {%- if entry.type == 'article' -%}
+            {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.journal | append: '</i>' -%}
+        {%- elsif proceedings contains entry.type -%}
+            {%- assign periodical_string = periodical_string | append: '<i>In ' | append: entry.booktitle | append: '</i>' -%}
+        {%- elsif thesis contains entry.type -%}
+            {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.school | append: '</i>' -%}
+        {%- else -%}
+            {%- comment -%} If no specific type, just output the journal/booktitle if it exists {% endcomment -%}
+            {%- if entry.journal -%}{%- assign periodical_string = periodical_string | append: '<i>' | append: entry.journal | append: '</i>' -%}{%- endif -%}
+            {%- if entry.booktitle -%}{%- assign periodical_string = periodical_string | append: '<i>' | append: entry.booktitle | append: '</i>' -%}{%- endif -%}
+        {%- endif -%}
 
-        {% if entry.volume %}
-            <span class="volume">, <i>{{ entry.volume }}</i></span>
-        {% endif %}
+        {%- comment -%} Add Year (bold) - always a space before if journal/booktitle exists {%- endcomment -%}
+        {%- if entry.year -%}
+            {%- if periodical_string != "" -%}{%- assign periodical_string = periodical_string | append: " " -%}{%- endif -%}
+            {%- assign periodical_string = periodical_string | append: '<b>' | append: entry.year | append: '</b>' -%}
+        {%- endif -%}
 
-        {% if entry.pages %}
-            <span class="pages">, {{ entry.pages }}</span>
-        {% endif %}
+        {%- comment -%} Add Volume (italic) - always ", " before if preceding info exists {%- endcomment -%}
+        {%- if entry.volume -%}
+            {%- if periodical_string != "" -%}{%- assign periodical_string = periodical_string | append: ", " -%}{%- endif -%}
+            {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.volume | append: '</i>' -%}
+        {%- endif -%}
 
-        {% assign citation_ends_with_dot = false %}
-        {% if entry.year or entry.volume or entry.pages %}
-            {% assign citation_ends_with_dot = true %}
-        {% endif %}
+        {%- comment -%} Add Pages - always ", " before if preceding info exists {%- endcomment -%}
+        {%- if entry.pages -%}
+            {%- if periodical_string != "" -%}{%- assign periodical_string = periodical_string | append: ", " -%}{%- endif -%}
+            {%- assign periodical_string = periodical_string | append: entry.pages -%}
+        {%- endif -%}
 
-        {% if citation_ends_with_dot %}
-            .
-        {% endif %}
+        {{- periodical_string -}}{%- if periodical_string != "" -%}.{%- endif -%}
 
-        {% if entry.doi %}
-            <span class="doi"> (DOI: <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noreferrer">{{ entry.doi }}</a>)</span>
-        {% endif %}
+        {%- comment -%} Add DOI (space before, then parenthesis) {%- endcomment -%}
+        {%- if entry.doi -%}
+            <span class="doi"> (DOI: {{- entry.doi -}})</span>
+        {%- endif -%}
 
-        {% if entry.location %}
-            {{ ", " }}{{ entry.location }}
-        {% endif %}
-        {% if entry.additional_info %}
-            {{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}
-        {% endif %}
+        {%- comment -%} Remaining fields from original code, these are generally after the core citation {%- endcomment -%}
+        {%- if entry.location -%}
+            , {{- entry.location -}}
+        {%- endif -%}
+        {%- if entry.additional_info -%}
+            {{- entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' -}}
+        {%- endif -%}
     </div>
+    {%- if entry.note -%}
+    <div class="publication-note mt-2"> 
+        {{- entry.note | markdownify -}} 
+    </div>
+    {%- endif -%}
+    {% comment %}
     <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+      {{- entry.note | strip -}}
+    </div> 
+    {% endcomment %}
     {% comment %}
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
@@ -246,7 +257,7 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
       {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">Link</a>
       {% endif %}
       {% if entry.arxiv %}
         <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
