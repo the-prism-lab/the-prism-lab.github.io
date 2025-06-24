@@ -149,6 +149,55 @@
     </div>
 
     <!-- Journal/Book title and date -->
+    <div class="periodical">
+        {% if entry.type == 'article' %}
+            <span class="journal"><i>{{ entry.journal }}</i></span>
+        {% elsif proceedings contains entry.type %}
+            <span class="booktitle"><i>In {{ entry.booktitle }}</i></span>
+        {% elsif thesis contains entry.type %}
+            <span class="school"><i>{{ entry.school }}</i></span>
+        {% else %}
+            {% comment %} If no specific type, just output the journal/booktitle if it exists {% endcomment %}
+            {% if entry.journal %}<span class="journal"><i>{{ entry.journal }}</i></span>{% endif %}
+            {% if entry.booktitle %}<span class="booktitle"><i>{{ entry.booktitle }}</i></span>{% endif %}
+        {% endif %}
+
+        {% if entry.year %}
+            <span class="year"> <b>{{ entry.year }}</b></span>
+        {% endif %}
+
+        {% if entry.volume %}
+            <span class="volume">, <i>{{ entry.volume }}</i></span>
+        {% endif %}
+
+        {% if entry.pages %}
+            <span class="pages">, {{ entry.pages }}</span>
+        {% endif %}
+
+        {% assign citation_ends_with_dot = false %}
+        {% if entry.year or entry.volume or entry.pages %}
+            {% assign citation_ends_with_dot = true %}
+        {% endif %}
+
+        {% if citation_ends_with_dot %}
+            .
+        {% endif %}
+
+        {% if entry.doi %}
+            <span class="doi"> (DOI: <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noreferrer">{{ entry.doi }}</a>)</span>
+        {% endif %}
+
+        {% if entry.location %}
+            {{ ", " }}{{ entry.location }}
+        {% endif %}
+        {% if entry.additional_info %}
+            {{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+    </div>
+    <div class="periodical">
+      {{ entry.note | strip }}
+    </div>
+    {% comment %}
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
@@ -184,6 +233,7 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% endcomment %}
 
     <!-- Links/Buttons -->
     <div class="links">
