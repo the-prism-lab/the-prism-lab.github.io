@@ -1,0 +1,11 @@
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* If the image inside needs to be centered within the figure */
+.align-center img {
+  display: block; /* Images are inline by default, make them block to center */
+  margin-left: auto;
+  margin-right: auto;
+}
