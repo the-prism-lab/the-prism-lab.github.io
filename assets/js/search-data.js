@@ -10,7 +10,7 @@ ninja.data = [{
       window.location.href = "/";
     },
   },{id: "dropdown-yi-lin-wu",
-              title: "Yi-Lin Wu",
+              title: "yi-lin wu",
               description: "",
               section: "Dropdown",
               handler: () => {
