@@ -9,14 +9,28 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-yi-lin-wu",
-          title: "yi-lin wu",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/YLW/";
-          },
-        },{id: "nav-publications",
+  },{id: "dropdown-yi-lin-wu",
+              title: "Yi-Lin Wu",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/YLW/";
+              },
+            },{id: "dropdown-current-members",
+              title: "current members",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/members/";
+              },
+            },{id: "dropdown-alumni",
+              title: "alumni",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/alumni/";
+              },
+            },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
@@ -237,8 +251,8 @@ ninja.data = [{
           section: "News",},{id: "news-after-nearly-five-years-of-work-since-the-start-of-this-project-in-early-2020-we-are-delighted-to-share-that-our-manuscript-has-been-published-in-jacs-this-paper-a-single-bioorthogonal-reaction-for-multiplex-cell-surface-protein-labeling-reports-a-highly-efficient-method-that-can-be-seamlessly-integrated-with-existing-bioorthogonal-reactions-enabling-multi-target-protein-labeling-using-small-molecule-fluorescent-tags-of-different-colors-this-journey-has-been-anything-but-smooth-adapting-to-remote-work-during-the-pandemic-facing-multiple-rejections-and-navigating-several-rounds-of-revisions-yet-these-challenges-have-only-strengthened-the-quality-and-depth-of-our-work-a-heartfelt-thank-you-to-yu-hsuan-and-his-team-and-colleagues-at-shenzhen-bay-for-their-dedication-and-perseverance-this-achievement-is-a-testament-to-the-power-of-collaboration-and-resilience",
           title: 'After nearly five years of work since the start of this project in...',
           description: "",
-          section: "News",},{id: "news-we-ve-migrated-our-website-to-github-for-a-sleek-new-look-and-feel-sparkles-smile",
-          title: 'We’ve migrated our website to GitHub for a sleek new look and feel!...',
+          section: "News",},{id: "news-we-ve-migrated-our-website-to-github-for-a-sleek-new-look-sparkles",
+          title: 'We’ve migrated our website to GitHub for a sleek new look!  :sparkles:',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
