@@ -8,7 +8,7 @@ nav_order: 1
 
 dropdown: true
 children:
-  - title: Yi-Lin Wu
+  - title: yi-lin wu
     permalink: /YLW/
   - title: divider
   - title: current members

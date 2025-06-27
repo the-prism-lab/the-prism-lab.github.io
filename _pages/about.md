@@ -27,9 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**P**hotochemistry **&#124;** **R**eactivity **&#124;** **I**nteractions **&#124;** **S**tructure **&#124;** **M**odeling
+##### **P**hotochemistry **&#124;** **R**eactivity **&#124;** **I**nteractions **&#124;** **S**tructure **&#124;** **M**odeling
 
-We study how light transforms molecular systems. Our research focuses on dynamic supramolecular assemblies, excited-state processes, and reactive ensembles — guided by both computation and experiment. Like a prism dispersing light, we break down complexity to reveal the fundamental interactions that shape chemical function.
+##### We study how light transforms molecular systems. Our research focuses on dynamic supramolecular assemblies, excited-state processes, and reactive ensembles — guided by both computation and experiment. Like a prism dispersing light, we break down complexity to reveal the fundamental interactions that shape chemical function.
+<br>
 
 {% comment %}
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
