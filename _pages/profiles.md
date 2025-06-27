@@ -3,7 +3,7 @@ layout: profiles
 permalink: /YLW/
 title: yi-lin wu
 description: | # Literal style for multiline text
-nav: true
+nav: false
 nav_order: 1
 
 profiles:
