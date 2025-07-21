@@ -15,3 +15,68 @@
 //   /* You might also want to increase font-weight if they're not bold enough: */
 //   /* font-weight: bold; */
 // }
+
+
+// /* Targeting the site header for a solid background color */
+// .site-header {
+//   background-color: #336699; /* Example: A deep blue color */
+// }
+
+
+
+// /* Targeting the site header for a background image */
+// .site-header {
+//   background-image: url('/assets/img/banner1.jpg'); /* Path to your banner image */
+//   background-repeat: no-repeat; /* Prevents the image from repeating */
+//   background-size: cover;       /* Scales the image to cover the entire banner area */
+//   background-position: center center; /* Centers the image */
+//   background-color: #f0f0f0;     /* Fallback color if the image doesn't load */
+//   /* You might need to adjust padding or height to make the image visible */
+//   padding-top: 50px; /* Example adjustment */
+//   padding-bottom: 50px; /* Example adjustment */
+// }
+
+// /* Adjusting text color for better readability on your banner */
+// .site-title a,
+// .page-link,
+// .site-nav .trigger a {
+//   color: #ffffff !important; /* Example: White text for dark banners */
+// }
+
+/* Target the navbar directly for the background color */
+.navbar {
+  background-color: #336699; /* Change hex code to 0033a0 for NYCU blue */
+}
+
+/* Ensure the navbar is opaque if it was transparent by default */
+.navbar.fixed-top {
+    /* If the navbar had some transparency or a default light color, this ensures it's fully opaque */
+    opacity: 1;
+}
+
+
+/* Adjust text color for better readability on your dark banner */
+/* This covers most direct text within the navbar and nav links */
+.site-title a,
+.page-link,
+.site-nav .trigger a,
+.nav-link,
+.navbar-brand { /* Keep this for other direct text within navbar-brand */
+  color: #ffffff !important;
+}
+
+/* Specific rule for the bolded part of the brand title (PRISM) */
+/* This is more specific than just .navbar-brand and should override it for the span */
+.navbar-brand .font-weight-bold {
+  color: #ffffff !important;
+}
+
+/* Ensure all theme toggle icons are white */
+.toggle-container button i {
+  color: #ffffff !important;
+}
+
+/* Adjust toggle button bars if needed for visibility on dark background */
+.navbar-toggler .icon-bar {
+  background-color: #ffffff;
+}
