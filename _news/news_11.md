@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-In light of the current circumstances of COVID-19, we decided to temporarily shut down the lab and work remotely from home. 
+In light of the current circumstances of COVID-19, we decided to temporarily shut down the lab and work remotely from home.

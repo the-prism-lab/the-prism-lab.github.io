@@ -16,13 +16,10 @@
 //   /* font-weight: bold; */
 // }
 
-
 // /* Targeting the site header for a solid background color */
 // .site-header {
 //   background-color: #336699; /* Example: A deep blue color */
 // }
-
-
 
 // /* Targeting the site header for a background image */
 // .site-header {
@@ -50,10 +47,9 @@
 
 /* Ensure the navbar is opaque if it was transparent by default */
 .navbar.fixed-top {
-    /* If the navbar had some transparency or a default light color, this ensures it's fully opaque */
-    opacity: 1;
+  /* If the navbar had some transparency or a default light color, this ensures it's fully opaque */
+  opacity: 1;
 }
-
 
 /* Adjust text color for better readability on your dark banner */
 /* This covers most direct text within the navbar and nav links */
@@ -61,7 +57,8 @@
 .page-link,
 .site-nav .trigger a,
 .nav-link,
-.navbar-brand { /* Keep this for other direct text within navbar-brand */
+.navbar-brand {
+  /* Keep this for other direct text within navbar-brand */
   color: #ffffff !important;
 }
 

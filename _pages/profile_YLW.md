@@ -11,7 +11,6 @@ Yi-Lin received his Ph.D. (2012) and M.Sc. (2008) from ETH Zürich under the sup
 His research integrates synthetic, spectroscopic, computational (including informatic) techniques to develop new materials and methodologies with applications spanning from biological systems to advanced photoinduced reactions.
 </p>
 
-
 <h3 class="mt-5 mb-3">Appointments</h3> 
 <div class="row g-0 align-items-baseline mb-2"> 
   <div class="col-md-9 col-8"> • Associate Professor, National Yang Ming Chiao Tung University</div> 

@@ -16,28 +16,28 @@ Recently, while pondering the question of why thionating a carbonyl molecule enh
 
 Upon closer analysis, we revealed that the enhanced electron affinity in the C=O $\rightarrow$ C=S substitution stems from the weaker overlap between sulfur's 3p orbitals and carbon's 2p orbitals in C=S, in comparison to the better interactions between the valence 2p orbitals of carbon and oxygen in C=O. This reduced overlap results in a less effective antibonding interaction, leading to a lower LUMO energy and increased electron affinity.
 
-The diminished overlap between (2p)<sub>C</sub> and (3p)<sub>S</sub> is well-represented by the (empirical) parameters utilized in the HMO theory. In the HMO Hamiltonian matrix, the Coulomb integral *α*<sub>C</sub> represents the energy of the individual (2p<sub>π</sub>)<sub>C</sub> atomic orbital of carbon, while the resonance integral *β*<sub>CC</sub> characterizes the coupling between adjacent (2p<sub>π</sub>)<sub>C</sub> orbitals. By adjusting the integral values for carbon through *α*<sub>X</sub> = *α*<sub>C</sub> + *k*<sub>X</sub> × *β*<sub>CC</sub> and  *β*<sub>XY</sub> = *k*<sub>XY</sub> × *β*<sub>CC</sub>, the property of the frontier orbitals of heteroatom-containing π systems can be estimated in the Hückel framework (*k*<sub>X</sub> and *k*<sub>XY</sub> are proportionality constants for heteroatom X).
+The diminished overlap between (2p)<sub>C</sub> and (3p)<sub>S</sub> is well-represented by the (empirical) parameters utilized in the HMO theory. In the HMO Hamiltonian matrix, the Coulomb integral _α_<sub>C</sub> represents the energy of the individual (2p<sub>π</sub>)<sub>C</sub> atomic orbital of carbon, while the resonance integral _β_<sub>CC</sub> characterizes the coupling between adjacent (2p<sub>π</sub>)<sub>C</sub> orbitals. By adjusting the integral values for carbon through _α_<sub>X</sub> = _α_<sub>C</sub> + _k_<sub>X</sub> × _β_<sub>CC</sub> and _β_<sub>XY</sub> = _k_<sub>XY</sub> × _β_<sub>CC</sub>, the property of the frontier orbitals of heteroatom-containing π systems can be estimated in the Hückel framework (_k_<sub>X</sub> and _k_<sub>XY</sub> are proportionality constants for heteroatom X).
 
 Using formaldehyde (H<sub>2</sub>CO) and thioformaldehyde (H<sub>2</sub>CS) as examples, we have:
 
-*α*<sub>O</sub> = *α*<sub>C</sub> + *k*<sub>O</sub> × *β*<sub>CC</sub> = *α*<sub>C</sub> + 0.97*β*<sub>CC</sub>\
-*β*<sub>C=O</sub> = *k*<sub>C=O</sub> × *β*<sub>CC</sub> = 1.06*β*<sub>CC</sub>
+_α_<sub>O</sub> = _α_<sub>C</sub> + _k_<sub>O</sub> × _β_<sub>CC</sub> = _α_<sub>C</sub> + 0.97*β*<sub>CC</sub>\
+_β_<sub>C=O</sub> = _k_<sub>C=O</sub> × _β_<sub>CC</sub> = 1.06*β*<sub>CC</sub>
 
 and
 
-*α*<sub>S</sub> = *α*<sub>C</sub> + *k*<sub>S</sub> × *β*<sub>CC</sub> =  *α*<sub>C</sub> + 0.46*β*<sub>CC</sub>\
-*β*<sub>C=S</sub> = *k*<sub>C=S</sub> × *β*<sub>CC</sub> = 0.81*β*<sub>CC</sub>
+_α_<sub>S</sub> = _α_<sub>C</sub> + _k_<sub>S</sub> × _β_<sub>CC</sub> = _α_<sub>C</sub> + 0.46*β*<sub>CC</sub>\
+_β_<sub>C=S</sub> = _k_<sub>C=S</sub> × _β_<sub>CC</sub> = 0.81*β*<sub>CC</sub>
 
-The energy of the π* level would be:
+The energy of the π\* level would be:
 
-*E*(π\*) = *α*<sub>C</sub> – 0.68*β*<sub>CC</sub> for H<sub>2</sub>CO\
-*E*(π\*) = *α*<sub>C</sub> – 0.61*β*<sub>CC</sub> for H<sub>2</sub>CS
+_E_(π\*) = _α_<sub>C</sub> – 0.68*β*<sub>CC</sub> for H<sub>2</sub>CO\
+_E_(π\*) = _α_<sub>C</sub> – 0.61*β*<sub>CC</sub> for H<sub>2</sub>CS
 
-i.e., **the π* level of H<sub>2</sub>CS is less destabilized**.
+i.e., **the π\* level of H<sub>2</sub>CS is less destabilized**.
 
-Even without solving the eigenvalue problem of HMO theory, this result is intuitively expected: the resonance integral β*<sub>C=S</sub> is smaller than β*<sub>C=O</sub>, lowering the energy of the π* orbital in H<sub>2</sub>CS. In our PCCP paper, we further showed that this *β*<sub>C=X</sub> can be **quantitatively estimated** as *β*<sub>C=X</sub> ≈ &#124;⟨*h*<sub>C</sub>&#124;**F**&#124;*h*<sub>S</sub>⟩&#124;, where *h*<sub>X</sub> are natural atomic hybrid orbitals (NHO), and **F** is the Fock (Kohn–Sham) operator.
+Even without solving the eigenvalue problem of HMO theory, this result is intuitively expected: the resonance integral β*<sub>C=S</sub> is smaller than β*<sub>C=O</sub>, lowering the energy of the π* orbital in H<sub>2</sub>CS. In our PCCP paper, we further showed that this *β*<sub>C=X</sub> can be **quantitatively estimated** as *β*<sub>C=X</sub> ≈ &#124;⟨*h*<sub>C</sub>&#124;**F**&#124;*h*<sub>S</sub>⟩&#124;, where *h\*<sub>X</sub> are natural atomic hybrid orbitals (NHO), and **F** is the Fock (Kohn–Sham) operator.
 
-However, it is important to note that semiempirical HMO may not always yield the correct picture. When comparing ester (RC(O)OR) and thioester (RC(O)SR), we found that *E*(π\*) = *α*<sub>C</sub> – 0.79*β*<sub>CC</sub> for the former and *α*<sub>C</sub> – 0.86*β*<sub>CC</sub> for the latter, suggesting a higher π* level for the sulfur compound. This result, however, conflicts with DFT calculations and the experimental reduction potentials of these molecules. The inconsistency arises from the *larger* *β*<sub>C–S</sub> = 0.69*β*<sub>CC</sub> than *β*<sub>C–O</sub> = 0.66*β*<sub>CC</sub> (as opposed to being *smaller* in the previous comparison; note the difference in *β*<sub>C=X</sub> and *β*<sub>C–X</sub> used here). Therefore, despite the elegance of HMO, we recommend using the DFT-based NBO/NHO analysis to obtain a more reliable understanding of the electronic effects of heteroatom substitution on π*-conjugated molecules. Please see [DOI: 10.1039/D2CP05186A](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d2cp05186a) for detailed discussion.
+However, it is important to note that semiempirical HMO may not always yield the correct picture. When comparing ester (RC(O)OR) and thioester (RC(O)SR), we found that _E_(π\*) = _α_<sub>C</sub> – 0.79*β*<sub>CC</sub> for the former and _α_<sub>C</sub> – 0.86*β*<sub>CC</sub> for the latter, suggesting a higher π* level for the sulfur compound. This result, however, conflicts with DFT calculations and the experimental reduction potentials of these molecules. The inconsistency arises from the *larger\* _β_<sub>C–S</sub> = 0.69*β*<sub>CC</sub> than _β_<sub>C–O</sub> = 0.66*β*<sub>CC</sub> (as opposed to being _smaller_ in the previous comparison; note the difference in _β_<sub>C=X</sub> and _β_<sub>C–X</sub> used here). Therefore, despite the elegance of HMO, we recommend using the DFT-based NBO/NHO analysis to obtain a more reliable understanding of the electronic effects of heteroatom substitution on π\*-conjugated molecules. Please see [DOI: 10.1039/D2CP05186A](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d2cp05186a) for detailed discussion.
 
 For this work, we also prepared a (yet another!? [link1](https://pubs.acs.org/doi/full/10.1021/acs.jchemed.8b00244) and [link 2](http://www.hulis.free.fr/)) Python script to [solve simple Hückel systems](https://colab.research.google.com/drive/1BE0aXDqAEAWV_42iadY7pkE6J79Moa-N?usp=sharing) (not the 'extended Hückel'). While this script is primarily designed for π-conjugated hydrocarbons, you can adapt it for heteroatom-containing systems by adjusting the Coulomb and resonance integrals in the Hückel matrix. Several examples are included in this interactive Jupyter Notebook for your reference (hosted in [Google Colab](https://colab.google/)).
 

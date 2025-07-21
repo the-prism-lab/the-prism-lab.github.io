@@ -150,100 +150,110 @@
 
     <!-- Journal/Book title and date -->
     <div class="periodical">
-        {%- assign periodical_string = "" -%}
+      {%- assign periodical_string = '' -%}
 
-        {%- comment -%} Add Journal/Booktitle/School - this is the first item -{% endcomment -%}
-        {%- if entry.type == 'article' -%}
-            {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.journal | append: '</i>' -%}
-        {%- elsif proceedings contains entry.type -%}
-            {%- assign periodical_string = periodical_string | append: '<i>In ' | append: entry.booktitle | append: '</i>' -%}
-        {%- elsif thesis contains entry.type -%}
-            {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.school | append: '</i>' -%}
-        {%- else -%}
-            {%- comment -%} If no specific type, just output the journal/booktitle if it exists {% endcomment -%}
-            {%- if entry.journal -%}{%- assign periodical_string = periodical_string | append: '<i>' | append: entry.journal | append: '</i>' -%}{%- endif -%}
-            {%- if entry.booktitle -%}{%- assign periodical_string = periodical_string | append: '<i>' | append: entry.booktitle | append: '</i>' -%}{%- endif -%}
+      {%- comment -%} Add Journal/Booktitle/School - this is the first item -{%- endcomment -%}
+      {%- if entry.type == 'article' -%}
+        {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.journal | append: '</i>' -%}
+      {%- elsif proceedings contains entry.type -%}
+        {%- assign periodical_string = periodical_string | append: '<i>In ' | append: entry.booktitle | append: '</i>' -%}
+      {%- elsif thesis contains entry.type -%}
+        {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.school | append: '</i>' -%}
+      {%- else -%}
+        {%- comment -%} If no specific type, just output the journal/booktitle if it exists {%- endcomment -%}
+        {%- if entry.journal -%}
+          {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.journal | append: '</i>' -%}
         {%- endif -%}
+        {%- if entry.booktitle -%}
+          {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.booktitle | append: '</i>' -%}
+        {%- endif -%}
+      {%- endif -%}
 
-        {%- comment -%} Add Year (bold) - always a space before if journal/booktitle exists {%- endcomment -%}
-        {%- if entry.year -%}
-            {%- if periodical_string != "" -%}{%- assign periodical_string = periodical_string | append: " " -%}{%- endif -%}
-            {%- assign periodical_string = periodical_string | append: '<b>' | append: entry.year | append: '</b>' -%}
-        {%- endif -%}
+      {%- comment -%} Add Year (bold) - always a space before if journal/booktitle exists {%- endcomment -%}
+      {%- if entry.year -%}
+        {%- if periodical_string != '' -%}{%- assign periodical_string = periodical_string | append: ' ' -%}{%- endif -%}
+        {%- assign periodical_string = periodical_string | append: '<b>' | append: entry.year | append: '</b>' -%}
+      {%- endif -%}
 
-        {%- comment -%} Add Volume (italic) - always ", " before if preceding info exists {%- endcomment -%}
-        {%- if entry.volume -%}
-            {%- if periodical_string != "" -%}{%- assign periodical_string = periodical_string | append: ", " -%}{%- endif -%}
-            {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.volume | append: '</i>' -%}
-        {%- endif -%}
+      {%- comment -%} Add Volume (italic) - always ", " before if preceding info exists {%- endcomment -%}
+      {%- if entry.volume -%}
+        {%- if periodical_string != '' -%}{%- assign periodical_string = periodical_string | append: ', ' -%}{%- endif -%}
+        {%- assign periodical_string = periodical_string | append: '<i>' | append: entry.volume | append: '</i>' -%}
+      {%- endif -%}
 
-        {%- comment -%} Add Pages - always ", " before if preceding info exists {%- endcomment -%}
-        {%- if entry.pages -%}
-            {%- if periodical_string != "" -%}{%- assign periodical_string = periodical_string | append: ", " -%}{%- endif -%}
-            {%- assign periodical_string = periodical_string | append: entry.pages -%}
-        {%- endif -%}
+      {%- comment -%} Add Pages - always ", " before if preceding info exists {%- endcomment -%}
+      {%- if entry.pages -%}
+        {%- if periodical_string != '' -%}{%- assign periodical_string = periodical_string | append: ', ' -%}{%- endif -%}
+        {%- assign periodical_string = periodical_string | append: entry.pages -%}
+      {%- endif -%}
 
-        {{- periodical_string -}}{%- if periodical_string != "" -%}.{%- endif -%}
+      {{- periodical_string -}}
+      {%- if periodical_string != '' -%}.{%- endif -%}
 
-        {%- comment -%} Add DOI (space before, then parenthesis) {%- endcomment -%}
-        {%- if entry.doi -%}
-            <span class="doi"> (DOI: {{- entry.doi -}})</span>
-        {%- endif -%}
+      {%- comment -%} Add DOI (space before, then parenthesis) {%- endcomment -%}
+      {%- if entry.doi -%}
+        <span class="doi">
+          (DOI:
+          {{- entry.doi -}}
+          )</span
+        >
+      {%- endif -%}
 
-        {%- comment -%} Remaining fields from original code, these are generally after the core citation {%- endcomment -%}
-        {%- if entry.location -%}
-            , {{- entry.location -}}
-        {%- endif -%}
-        {%- if entry.additional_info -%}
-            {{- entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' -}}
-        {%- endif -%}
+      {%- comment -%} Remaining fields from original code, these are generally after the core citation {%- endcomment -%}
+      {%- if entry.location -%}
+        ,
+        {{- entry.location -}}
+      {%- endif -%}
+      {%- if entry.additional_info -%}
+        {{- entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' -}}
+      {%- endif -%}
     </div>
     {%- if entry.note -%}
-    <div class="publication-note mt-2"> 
-        {{- entry.note | markdownify -}} 
-    </div>
+      <div class="publication-note mt-2">
+        {{- entry.note | markdownify -}}
+      </div>
     {%- endif -%}
     {% comment %}
-    <div class="periodical">
-      {{- entry.note | strip -}}
-    </div> 
+      <div class="periodical">
+        {{- entry.note | strip -}}
+      </div>
     {% endcomment %}
     {% comment %}
-    {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
-    {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-    {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-    {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
-    {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
-    {% else %}
-      {% capture entrytype %}{% endcapture %}
-    {% endif %}
-    {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
-    {% endif %}
-    {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
-    {% endif %}
-    {% if entry.location %}
-      {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
-    {% endif -%}
-    {% if entry.additional_info %}
-      {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
-    {% endif %}
-    {% capture hook_exists %}{% file_exists _includes/hook/bib.liquid %}{% endcapture %}
-    {% if hook_exists == 'true' %}
-      {% include hook/bib.liquid %}
-    {% endif %}
-    {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+      {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
+      {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+      {% if entry.type == 'article' %}
+        {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% elsif proceedings contains entry.type %}
+        {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% elsif thesis contains entry.type %}
+        {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}{% endcapture %}
+      {% endif %}
+      {% if entry.month %}
+        {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+      {% endif %}
+      {% if entry.year %}
+        {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
+      {% endif %}
+      {% if entry.location %}
+        {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
+      {% endif -%}
+      {% if entry.additional_info %}
+        {% capture entrytype %}{{ entrytype }}{{ entry.additional_info | markdownify | remove: '<p>' | remove: '</p>' }}{% endcapture %}
+      {% endif %}
+      {% capture hook_exists %}{% file_exists _includes/hook/bib.liquid %}{% endcapture %}
+      {% if hook_exists == 'true' %}
+        {% include hook/bib.liquid %}
+      {% endif %}
+      {% assign entrytype_text = entrytype | strip_html | strip %}
+      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+      <div class="periodical">
+        {{ periodical | strip }}
+      </div>
+      <div class="periodical">
+        {{ entry.note | strip }}
+      </div>
     {% endcomment %}
 
     <!-- Links/Buttons -->

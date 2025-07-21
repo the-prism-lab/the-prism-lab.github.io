@@ -3,7 +3,7 @@ layout: about
 title: news
 # description: Photochemistry | Reactivity | Interactions | Structure | Modeling
 permalink: /
-subtitle:  <b>P</b>hotochemistry<b> | R</b>eactivity<b> | I</b>nteractions<b> | S</b>tructure<b> | M</b>odeling #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <b>P</b>hotochemistry<b> | R</b>eactivity<b> | I</b>nteractions<b> | S</b>tructure<b> | M</b>odeling #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 # profile:
 #   align: right
@@ -30,9 +30,11 @@ latest_posts:
 
 <!-- ###### **P**hotochemistry **&#124;** **R**eactivity **&#124;** **I**nteractions **&#124;** **S**tructure **&#124;** **M**odeling -->
 
-> We study how light transforms molecular systems. Our research focuses on dynamic supramolecular assemblies, excited-state processes, and reactive ensembles — guided by both computation and experiment. Like a prism dispersing light, we break down complexity to reveal the fundamental interactions that shape chemical function.
->
-> Learn more about our **[research](/research/)** here.
+<blockquote>
+<p>We study how light transforms molecular systems. Our research focuses on dynamic supramolecular assemblies, excited-state processes, and reactive ensembles — guided by both computation and experiment. Like a prism dispersing light, we break down complexity to reveal the fundamental interactions that shape chemical function.</p>
+<br>
+<p>Learn more about our <b><a href="/research/">research</a></b> here.</p>
+</blockquote>
 
 {% comment %}
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

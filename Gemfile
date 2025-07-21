@@ -21,6 +21,7 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
+    gem "jekyll-seo-tag"
 
     #gem 'wdm', '>= 0.1.0' # Windows file watcher
 

@@ -22,10 +22,7 @@ Sunlight can power chemical reactions that would otherwise be difficult or impos
 
 Instead of relying on rare metals, we design metal-free organic alternatives. By modifying simple, commercially available dyes, we control their electronic structure to promote efficient formation of excited states known as triplets. This approach minimizes energy loss and enables fast and selective chemical reactions under mild conditions.
 
-
-
-*- Related publications: [Wu 2023](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d2cp05186a),  [Wright 2021](https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/ejoc.202100793)*
-
+_- Related publications: [Wu 2023](https://pubs.rsc.org/en/content/articlelanding/2023/cp/d2cp05186a), [Wright 2021](https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/ejoc.202100793)_
 
 <h5><b>2. Organic Room-Temperature Phosphors</b></h5> <img src="/assets/img/Project2.jpg" alt="RTP photo" style="width:14%; float: right; margin: 0 1em 1em 0;">
 
@@ -33,7 +30,7 @@ Room-temperature phosphorescence in organic materials has great potential for ap
 
 We address this challenge by introducing functional groups that both encourage triplet formation and participate in non-covalent interactions. These interactions limit molecular motion and reduce energy loss, making light emission more efficient. We also use molecular modeling to identify which motions need to be controlled and how to best suppress them through strategic design.
 
-*- Related publications: [Zhou 2020](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc04646a)*
+_- Related publications: [Zhou 2020](https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc04646a)_
 
 <h5><b>3. Functional Porous Materials</b></h5> <img src="/assets/img/Project3.jpg" alt="G-quadruplex Organic Framework" style="width:17%; float: right; margin: 0 1em 1em 0;">
 
@@ -43,7 +40,7 @@ When molecules are spaced apart, they behave like isolated units and maintain th
 
 We are particularly interested in using non-covalent interactions to build crystalline porous solids and in developing polymers with irregular backbones that resist stacking. These approaches support easier fabrication and recycling.
 
-*- Related publications: [Goswami 2018](https://pubs.acs.org/doi/10.1021/acs.chemmater.8b00720), [Wu 2018](https://onlinelibrary.wiley.com/doi/10.1002/anie.201800230), [Wu 2017](https://www.nature.com/articles/nchem.2689)*
+_- Related publications: [Goswami 2018](https://pubs.acs.org/doi/10.1021/acs.chemmater.8b00720), [Wu 2018](https://onlinelibrary.wiley.com/doi/10.1002/anie.201800230), [Wu 2017](https://www.nature.com/articles/nchem.2689)_
 
 <h5><b>4. New Reaction Development and Mechanistic Investigation</b></h5>
 
@@ -52,5 +49,4 @@ Sulfur-containing organic compounds are highly versatile and play a key role in 
 We develop new reactions that involve sulfur-based functional groups such as thiocarbonyls, thioesters, and thioamides. These methods are applied to the synthesis of chromophores, the creation of new polymers, and biocompatible molecular tools. We combine synthetic work with detailed studies of the underlying mechanisms to better understand how these reactions occur and how they can be accelerated.
 <img src="/assets/img/Project4.jpg" alt="TAMM reaction" style="width:50%; display:block; margin:auto;">
 
-
-*- Related publications: [Huang 2025](https://pubs.acs.org/doi/10.1021/jacs.4c11701)*
+_- Related publications: [Huang 2025](https://pubs.acs.org/doi/10.1021/jacs.4c11701)_

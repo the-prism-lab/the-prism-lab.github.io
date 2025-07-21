@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-We are so happy to see our **first computational paper** *Why does thionating a carbonyl molecule make it a better electron acceptor?* (DOI: [10.1039/D2CP05186A](https://doi.org/10.1039/D2CP05186A)) appeared on the welcoming PCCP! We show that the enhanced electron affinity of heavy-atom substituted (‘doped’) organic molecules can be (generally) understood by considering the weaker antibonding interaction between carbon and heavy elements, leading to lower LUMO levels overall. Electronegativity, despite the implication of this term, is not a suitable parameter to gauge the effect of heavy elements on electron affinity.
+We are so happy to see our **first computational paper** _Why does thionating a carbonyl molecule make it a better electron acceptor?_ (DOI: [10.1039/D2CP05186A](https://doi.org/10.1039/D2CP05186A)) appeared on the welcoming PCCP! We show that the enhanced electron affinity of heavy-atom substituted (‘doped’) organic molecules can be (generally) understood by considering the weaker antibonding interaction between carbon and heavy elements, leading to lower LUMO levels overall. Electronegativity, despite the implication of this term, is not a suitable parameter to gauge the effect of heavy elements on electron affinity.
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0 text-center">

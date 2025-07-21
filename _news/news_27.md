@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We've migrated our website to GitHub for a sleek new look!  :sparkles: 
+We've migrated our website to GitHub for a sleek new look! :sparkles:
