@@ -249,6 +249,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-ve-migrated-our-website-to-github-for-a-sleek-new-look-sparkles",
           title: 'We’ve migrated our website to GitHub for a sleek new look!  :sparkles:',
           description: "",
+          section: "News",},{id: "news-relocating-to-nycu-the-group-will-be-moving-to-the-department-of-applied-chemistry-at-national-yang-ming-chiao-tung-university-nycu-in-taiwan-starting-august-1-2025-ylw-is-immensely-grateful-for-the-inspiring-time-at-cardiff-university-and-is-looking-forward-to-the-new-collaborations-new-challenges-and-new-science-at-nycu",
+          title: 'Relocating to NYCU: The group will be moving to the Department of Applied...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
