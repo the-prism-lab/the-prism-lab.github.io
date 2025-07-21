@@ -10,36 +10,6 @@
   margin-right: auto;
 }
 
-// .publications h2.bibliography {
-//   color: #dddcdc; /* Or any darker hex code you prefer, e.g., #333 for darker, #000 for black */
-//   /* You might also want to increase font-weight if they're not bold enough: */
-//   /* font-weight: bold; */
-// }
-
-// /* Targeting the site header for a solid background color */
-// .site-header {
-//   background-color: #336699; /* Example: A deep blue color */
-// }
-
-// /* Targeting the site header for a background image */
-// .site-header {
-//   background-image: url('/assets/img/banner1.jpg'); /* Path to your banner image */
-//   background-repeat: no-repeat; /* Prevents the image from repeating */
-//   background-size: cover;       /* Scales the image to cover the entire banner area */
-//   background-position: center center; /* Centers the image */
-//   background-color: #f0f0f0;     /* Fallback color if the image doesn't load */
-//   /* You might need to adjust padding or height to make the image visible */
-//   padding-top: 50px; /* Example adjustment */
-//   padding-bottom: 50px; /* Example adjustment */
-// }
-
-// /* Adjusting text color for better readability on your banner */
-// .site-title a,
-// .page-link,
-// .site-nav .trigger a {
-//   color: #ffffff !important; /* Example: White text for dark banners */
-// }
-
 /* Target the navbar directly for the background color */
 .navbar {
   background-color: #336699; /* Change hex code to 0033a0 for NYCU blue */
@@ -76,4 +46,10 @@
 /* Adjust toggle button bars if needed for visibility on dark background */
 .navbar-toggler .icon-bar {
   background-color: #ffffff;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed for typical mobile devices */
+  .footer-col {
+    font-size: 0.5em; /* Make text smaller on mobile */
+  }
 }
