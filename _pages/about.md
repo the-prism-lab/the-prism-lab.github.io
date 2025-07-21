@@ -31,7 +31,7 @@ latest_posts:
 <!-- ###### **P**hotochemistry **&#124;** **R**eactivity **&#124;** **I**nteractions **&#124;** **S**tructure **&#124;** **M**odeling -->
 
 <blockquote>
-<p>We study how light transforms molecular systems. Our research focuses on dynamic supramolecular assemblies, excited-state processes, and reactive ensembles — guided by both computation and experiment. Like a prism dispersing light, we break down complexity to reveal the fundamental interactions that shape chemical function.</p>
+<p>We study how light transforms molecular systems. Our research focuses on dynamic supramolecular assemblies, excited-state processes, and reactive ensembles, guided by both computation and experiment. Like a prism dispersing light, we break down complexity to reveal the fundamental interactions that shape chemical function.</p>
 <br>
 <p>Learn more about our <b><a href="/research/">research</a></b> here.</p>
 </blockquote>
