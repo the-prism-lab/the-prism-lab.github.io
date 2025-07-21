@@ -7,11 +7,6 @@ nav: true
 nav_order: 5
 ---
 
-Dr. Yi-Lin Wu
+For the time being, Dr. Yi-Lin Wu can still be reached by E-mail at: **WuYL[at]cardiff.ac.uk**\
+The new contact information for National Yang Ming Chiao Tung University (NYCU) will be available shortly.
 
-School of Chemistry, Cardiff University\
-Main Building, Park Place\
-Cardiff, CF10 3AT (UK)
-
-E-mail: WuYL[at]cardiff.ac.uk\
-Phone: +44 (0)29 2087 5841

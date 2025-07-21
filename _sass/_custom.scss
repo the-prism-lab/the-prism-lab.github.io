@@ -12,7 +12,7 @@
 
 /* Target the navbar directly for the background color */
 .navbar {
-  background-color: #336699; /* Change hex code to 0033a0 for NYCU blue */
+  background-color: #336699; /* 336699 Change hex code to 0033a0 for NYCU blue */
 }
 
 /* Ensure the navbar is opaque if it was transparent by default */
@@ -48,8 +48,8 @@
   background-color: #ffffff;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed for typical mobile devices */
+@media (max-width: 100px) { /* Adjust breakpoint as needed */
   .footer-col {
-    font-size: 0.5em; /* Make text smaller on mobile */
+    display: none; /* Hide the entire footer column on mobile */
   }
 }
