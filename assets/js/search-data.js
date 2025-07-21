@@ -30,26 +30,19 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/alumni/";
               },
-            },{id: "nav-publications",
+            },{id: "nav-research",
+          title: "research",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
-          },
-        },{id: "nav-thoughts",
-          title: "thoughts",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/thoughts/index.html";
-          },
-        },{id: "nav-python-notebooks",
-          title: "python-notebooks",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/python_nb/";
           },
         },{id: "nav-contact",
           title: "contact",
@@ -58,7 +51,28 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact/";
           },
-        },{id: "post-organic-chemistry-is-nothing-but-pattern-recognition",
+        },{id: "dropdown-thoughts",
+              title: "thoughts",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/thoughts/";
+              },
+            },{id: "dropdown-python-notebooks",
+              title: "python-notebooks",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/python_nb/";
+              },
+            },{id: "dropdown-resources",
+              title: "resources",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/resources/";
+              },
+            },{id: "post-organic-chemistry-is-nothing-but-pattern-recognition",
         
           title: "Organic chemistry is nothing but pattern recognition!?",
         
