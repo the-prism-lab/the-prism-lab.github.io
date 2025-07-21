@@ -3,8 +3,8 @@ layout: page
 permalink: /resources/
 title: resources
 # description: useful links
-nav: false
-nav_order: 3
+# nav: false
+# nav_order: 16
 ---
 
 * [Spectral database for organic compounds](https://sdbs.db.aist.go.jp/sdbs/cgi-bin/cre_index.cgi)

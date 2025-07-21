@@ -1,13 +1,16 @@
 ---
 layout: page
 title: submenus
-nav: false
-nav_order: 20
+nav: true
+nav_order: 10
 dropdown: true
 children:
-  - title: resourses
-    permalink: /resources/
+  - title: thoughts
+    permalink: /thoughts/
   - title: divider
-  - title: contact
-    permalink: /blog/
+  - title: python-notebooks
+    permalink: /python_nb/
+  - title: divider
+  - title: resources
+    permalink: /resources/
 ---

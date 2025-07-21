@@ -4,7 +4,7 @@ permalink: /team/
 title: team
 description: members of the lab or group
 nav: true
-nav_order: 1
+nav_order: 2
 
 dropdown: true
 children:

@@ -3,8 +3,8 @@ layout: page
 permalink: /python_nb/
 title: python-notebooks
 # description: useful links
-nav: true
-nav_order: 5
+# nav: false
+# nav_order: 15
 ---
 These files are interactive Python Jupyter Notebooks hosted on [Google Colaboratory](https://colab.research.google.com/), which enable the execution of scripts online using Google's cloud computing resources. Alternatively, they can be stored locally and executed using local [Jupyter Lab/Notebook](https://jupyter.org/) or other compatible software. Please note that adjustments may be necessary for code snippets related to file reading and writing if opting for local execution.
 

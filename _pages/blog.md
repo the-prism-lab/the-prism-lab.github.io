@@ -2,8 +2,8 @@
 layout: default
 permalink: /thoughts/
 title: thoughts
-nav: true
-nav_order: 4
+# nav: false
+# nav_order: 14
 pagination:
   enabled: true
   collection: posts
