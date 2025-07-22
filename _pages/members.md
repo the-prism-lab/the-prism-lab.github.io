@@ -12,7 +12,7 @@ nav_order: 99
 - Chenyang Wu, (2021–, reaction kinetics)
 - Timothy L. Cooper (2023–, triplet chromophores)
 
-## {% comment %}
+---
 
 ### Postdoctoral associates
 
@@ -31,4 +31,4 @@ nav_order: 99
 
 ### Undergraduates
 
-{% endcomment %}
+
