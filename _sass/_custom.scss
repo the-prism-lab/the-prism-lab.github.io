@@ -53,3 +53,54 @@
     display: none; /* Hide the entire footer column on mobile */
   }
 }
+
+/* Google Translate Widget Customization */
+/* 1. Reset any conflicting padding on the body from any previous attempts. */
+body.fixed-top-nav {
+    padding-top: 0 !important; /* Ensure this is reset if it's set elsewhere */
+}
+
+/* 2. Most likely fix: Adjust the 'top' position of your FIXED NAVBAR */
+/* When the page is translated (html.translated-ltr or html.translated-rtl),
+   we push the fixed navbar down by the height of the Google Translate banner. */
+html.translated-ltr #navbar.fixed-top,
+html.translated-rtl #navbar.fixed-top {
+    /* Google Translate banner is typically ~32px to ~36px tall.
+       Set your navbar's 'top' to this value directly. */
+    top: 36px !important; /* Start with 36px. Adjust this precisely! */
+    /* Ensure its z-index is still high enough to be above content, but lower than widget dropdown */
+    z-index: 1050; /* Common Bootstrap fixed navbar z-index */
+}
+
+
+/* 3. Google Translate widget's dropdown position */
+/* This positions the smaller dropdown widget itself. */
+.google-translate-container {
+    position: fixed;
+    top: 100px;       /* This would be aound 65 px on computer browser, but was increased */
+                     /* to 100 px to ensure it looks ok on a phone. */
+    right: 10px;
+    z-index: 9999;   /* Crucial: Must be higher than your navbar's z-index. */
+    background-color: rgba(0, 0, 0, 0.05); /* Optional: Background color for the widget */
+    // border: 1px solid #ccc; /* Optional: Border for the widget */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* 4. Ensure the main content container's padding is correct. */
+/* This is needed because the Google Translate banner still takes up space.
+   If the navbar is pushed down, the content should also start below the banner. */
+body > div.container.mt-5 {
+    padding-top: 80px !important;
+}
+
+
+/* Optional: Styles for the dropdown widget itself */
+.goog-te-combo {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
