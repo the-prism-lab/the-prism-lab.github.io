@@ -55,6 +55,9 @@ socials_in_search: true
 posts_in_search: true
 bib_search: true
 
+# Add this line anywhere in your _config.yml,  lalala eji12oej
+search_shortcut: false
+
 # Dimensions
 max_width: 930px
 
