@@ -103,6 +103,36 @@ body > div.container.mt-5 {
     font-size: 14px;
 }
 
+/* Hide the "Powered by Google Translate" bar */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  height: 0px !important;
+  visibility: hidden !important;
+  top: 0px !important; /* Ensure it collapses upwards */
+}
+
+// /* Reset any top margin/padding Google might add to the body/html */
+// body {
+//     top: 20px !important;
+//     margin-top: 0px !important;
+// }
+// html {
+//     margin-top: 0px !important;
+// }
+
+// /* If your navbar is fixed-top, ensure its 'top' is 0 or its default */
+// /* This overrides the old 36px push-down */
+// #navbar.fixed-top {
+//     top: 0 !important;
+// }
+
+// /* Adjust the main content padding if needed, assuming the banner is now gone */
+// /* This is to remove the large padding-top you previously had */
+// body > div.container.mt-5 {
+//     padding-top: 0 !important; /* Or set it to the default padding al-folio expects */
+// }
+
+
 
 /* For a feathered edge that matches the rectangular shape */
 .profile img {
