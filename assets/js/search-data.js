@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/resources/";
               },
-            },{id: "post-organic-chemistry-is-nothing-but-pattern-recognition",
+            },{id: "post-my-quiet-return-to-rss-and-why-you-might-like-it-too",
+        
+          title: "My quiet return to RSS (and why you might like it too)",
+        
+        description: "Your attention is one of the most valuable things you have; it&#39;s time for an RSS revival",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/RSS/";
+          
+        },
+      },{id: "post-organic-chemistry-is-nothing-but-pattern-recognition",
         
           title: "Organic chemistry is nothing but pattern recognition!?",
         
