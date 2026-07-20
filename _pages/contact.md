@@ -27,7 +27,4 @@ Hsinchu City 300093, Taiwan
 
 ---
 
-*For Cardiff-related inquiries, I remain reachable by email at: [wuyl[at]cardiff.ac.uk](mailto:wuyl@cardiff.ac.uk)*
-
-
-
+_For Cardiff-related inquiries, I remain reachable by email at: [wuyl[at]cardiff.ac.uk](mailto:wuyl@cardiff.ac.uk)_

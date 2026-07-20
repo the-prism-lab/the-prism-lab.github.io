@@ -48,7 +48,8 @@
   background-color: #ffffff;
 }
 
-@media (max-width: 100px) { /* Adjust breakpoint as needed */
+@media (max-width: 100px) {
+  /* Adjust breakpoint as needed */
   .footer-col {
     display: none; /* Hide the entire footer column on mobile */
   }
@@ -57,7 +58,7 @@
 /* Google Translate Widget Customization */
 /* 1. Reset any conflicting padding on the body from any previous attempts. */
 body.fixed-top-nav {
-    padding-top: 0 !important; /* Ensure this is reset if it's set elsewhere */
+  padding-top: 0 !important; /* Ensure this is reset if it's set elsewhere */
 }
 
 /* 2. Most likely fix: Adjust the 'top' position of your FIXED NAVBAR */
@@ -65,42 +66,40 @@ body.fixed-top-nav {
    we push the fixed navbar down by the height of the Google Translate banner. */
 html.translated-ltr #navbar.fixed-top,
 html.translated-rtl #navbar.fixed-top {
-    /* Google Translate banner is typically ~32px to ~36px tall.
+  /* Google Translate banner is typically ~32px to ~36px tall.
        Set your navbar's 'top' to this value directly. */
-    top: 36px !important; /* Start with 36px. Adjust this precisely! */
-    /* Ensure its z-index is still high enough to be above content, but lower than widget dropdown */
-    z-index: 1050; /* Common Bootstrap fixed navbar z-index */
+  top: 36px !important; /* Start with 36px. Adjust this precisely! */
+  /* Ensure its z-index is still high enough to be above content, but lower than widget dropdown */
+  z-index: 1050; /* Common Bootstrap fixed navbar z-index */
 }
-
 
 /* 3. Google Translate widget's dropdown position */
 /* This positions the smaller dropdown widget itself. */
 .google-translate-container {
-    position: fixed;
-    top: 100px;       /* This would be aound 65 px on computer browser, but was increased */
-                     /* to 100 px to ensure it looks ok on a phone. */
-    right: 10px;
-    z-index: 9999;   /* Crucial: Must be higher than your navbar's z-index. */
-    background-color: rgba(0, 0, 0, 0.05); /* Optional: Background color for the widget */
-    // border: 1px solid #ccc; /* Optional: Border for the widget */
-    padding: 5px;
-    border-radius: 10px;
+  position: fixed;
+  top: 100px; /* This would be aound 65 px on computer browser, but was increased */
+  /* to 100 px to ensure it looks ok on a phone. */
+  right: 10px;
+  z-index: 9999; /* Crucial: Must be higher than your navbar's z-index. */
+  background-color: rgba(0, 0, 0, 0.05); /* Optional: Background color for the widget */
+  // border: 1px solid #ccc; /* Optional: Border for the widget */
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* 4. Ensure the main content container's padding is correct. */
 /* This is needed because the Google Translate banner still takes up space.
    If the navbar is pushed down, the content should also start below the banner. */
 body > div.container.mt-5 {
-    padding-top: 80px !important;
+  padding-top: 80px !important;
 }
-
 
 /* Optional: Styles for the dropdown widget itself */
 .goog-te-combo {
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 3px;
-    font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 14px;
 }
 
 /* Hide the "Powered by Google Translate" bar */
@@ -132,8 +131,6 @@ body > div.container.mt-5 {
 //     padding-top: 0 !important; /* Or set it to the default padding al-folio expects */
 // }
 
-
-
 /* For a feathered edge that matches the rectangular shape */
 .profile img {
   /* Ensure the image has a defined size for the mask to work consistently */
@@ -151,12 +148,9 @@ body > div.container.mt-5 {
   mask-image:
     /* Top fade: black starts at $fade-amount from top, fades to transparent at 0 */
     linear-gradient(to top, transparent, black $fade-amount),
-    /* Bottom fade: black starts at $fade-amount from bottom, fades to transparent at 0 */
-    linear-gradient(to bottom, transparent, black $fade-amount),
-    /* Left fade: black starts at $fade-amount from left, fades to transparent at 0 */
-    linear-gradient(to left, transparent, black $fade-amount),
-    /* Right fade: black starts at $fade-amount from right, fades to transparent at 0 */
-    linear-gradient(to right, transparent, black $fade-amount);
+    /* Bottom fade: black starts at $fade-amount from bottom, fades to transparent at 0 */ linear-gradient(to bottom, transparent, black $fade-amount),
+    /* Left fade: black starts at $fade-amount from left, fades to transparent at 0 */ linear-gradient(to left, transparent, black $fade-amount),
+    /* Right fade: black starts at $fade-amount from right, fades to transparent at 0 */ linear-gradient(to right, transparent, black $fade-amount);
 
   /* Each mask is the full size of the element, the gradient handles the fade */
   mask-size: 100% 100%;
@@ -164,11 +158,8 @@ body > div.container.mt-5 {
   mask-composite: intersect; /* This combines the four masks */
 
   /* Add -webkit- prefixes for broader compatibility */
-  -webkit-mask-image:
-    linear-gradient(to top, transparent, black $fade-amount),
-    linear-gradient(to bottom, transparent, black $fade-amount),
-    linear-gradient(to left, transparent, black $fade-amount),
-    linear-gradient(to right, transparent, black $fade-amount);
+  -webkit-mask-image: linear-gradient(to top, transparent, black $fade-amount), linear-gradient(to bottom, transparent, black $fade-amount),
+    linear-gradient(to left, transparent, black $fade-amount), linear-gradient(to right, transparent, black $fade-amount);
   -webkit-mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-composite: intersect;
