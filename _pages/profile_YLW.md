@@ -40,7 +40,7 @@ His research integrates synthetic, spectroscopic, computational (including infor
 </div>
 <div class="row g-0 align-items-baseline mb-2">
   <div class="col-md-9 col-8"> • Ph.D. in Chemistry, ETH Zürich<br>Advisor: Prof. Dr. François Diederich</div>
-  <div class="col-md-3 col-4 text-end">Spet. 2008–Mar. 2012</div>
+  <div class="col-md-3 col-4 text-end">Sept. 2008–Mar. 2012</div>
 </div>
 <div class="row g-0 align-items-baseline mb-2">
   <div class="col-md-9 col-8"> • M.Sc. in Chemistry, ETH Zürich<br>Advisor: Prof. Dr. François Diederich</div>

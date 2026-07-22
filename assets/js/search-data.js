@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/resources/";
               },
-            },{id: "post-my-quiet-return-to-rss-and-why-you-might-like-it-too",
+            },{id: "post-the-effective-barrier-of-a-reaction-with-fast-pre-equilibrium",
+        
+          title: "The *effective* barrier of a reaction with (fast) pre-equilibrium",
+        
+        description: "Why the effective barrier of A ⇌ B → C is not ΔG2‡, not the height of TS2 above A, and not ΔG1‡+ΔG2‡ — the kinetics analysis behind our recent JACS paper.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/effective_barrier/";
+          
+        },
+      },{id: "post-my-quiet-return-to-rss-and-why-you-might-like-it-too",
         
           title: "My quiet return to RSS (and why you might like it too)",
         
@@ -279,6 +290,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-congratulations-to-dr-chenyang-wu-we-are-delighted-to-announce-that-chenyang-wu-has-successfully-defended-his-phd-viva-and-submitted-his-dissertation-titled-development-and-mechanistic-investigation-of-a-1-2-aminothiol-based-bioorthogonal-reaction-chenyang-played-a-key-role-in-the-mechanistic-study-of-a-high-efficiency-bioorthogonal-reaction-for-multiplex-cell-surface-protein-labeling-see-the-tamm-coupling-in-our-2025-jacs-paper",
           title: 'Congratulations to Dr. Chenyang Wu! We are delighted to announce that Chenyang Wu...',
+          description: "",
+          section: "News",},{id: "news-new-paper-in-jacs-our-first-since-relocating-to-nycu-thiol-retaining-n-terminal-cysteine-chemistry-continuing-our-collaboration-with-dr-yu-hsuan-tsai-we-report-a-strategy-that-traps-n-terminal-cysteine-s-1-2-aminothiol-as-a-stable-thiol-retaining-conjugate-instead-of-the-usual-cyclic-thiazoline-enabling-dual-modification-and-bicyclic-peptide-construction-our-contribution-rationalized-this-selectivity-computationally-showing-how-steric-bulk-on-the-reagent-tips-the-balance-away-from-cyclization-the-reasoning-behind-that-including-an-interactive-figure-is-written-up-here-our-first-paper-since-relocating-to-nycu-doi-10-1021-jacs-6c01648",
+          title: 'New paper in JACS, our first since relocating to NYCU: thiol-retaining N-terminal cysteine...',
           description: "",
           section: "News",},{
       id: 'light-theme',
