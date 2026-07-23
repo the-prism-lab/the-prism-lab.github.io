@@ -10,7 +10,7 @@ related_posts: false
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0 text-center">
     {% include figure.liquid
-      path="assets/img/GroupPhoto_Sept2022-scaled.jpg" 
+      path="assets/img/GroupPhoto_Sept2022-scaled.jpg"
       alt="Group Photo September 2022"
       width="450"
       class="img-fluid rounded z-depth-1 mx-auto d-block"

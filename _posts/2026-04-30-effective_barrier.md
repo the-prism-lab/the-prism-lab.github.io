@@ -8,7 +8,7 @@ categories: research-notes
 related_posts: false
 ---
 
-Reaction schemes of this form come up all the time: 
+Reaction schemes of this form come up all the time:
 
 $$
 \mathsf{A} \;\underset{k_{-1}}{\overset{k_{1}}{\rightleftharpoons}}\; \mathsf{B} \;\overset{k_{2}}{\longrightarrow}\; \mathsf{C}
@@ -16,19 +16,19 @@ $$
 
 Product **C** (the species we care about) can be produced from **A**, but only by way of a reactive intermediate **B** that is in equilibrium with **A**. Before going further, here is what each symbol means:
 
-| Symbol | Meaning |
-|---|---|
-| ${\small k_1,\ k_{-1}}$  | forward / reverse rate constants for **A** ⇌ **B**|
-| ${\small k_2}$  | rate constant for the **B** → **C** step |
-| ${\small K = k_1/k_{-1}}$  | equilibrium constant for **A** ⇌ **B** (large ${\small K}$  means mostly **B**; small ${\small K}$ means mostly **A**) |
-| **TS₁**, **TS₂** | transition states connecting **A**&**B** and **B**&**C**, respectively|
-| ${\small \Delta G_1^{\ddagger},\ \Delta G_{-1}^{\ddagger}}$ | activation barriers for the forward / reverse **A** ⇌ **B** steps |
-| ${\small \Delta G_2^{\ddagger}}$  | activation barrier for the **B** → **C** step |
-| ${\small \Delta G_{\text{eff}}^{\ddagger}}$  | the one *effective* barrier that sets how fast **C** actually forms |
+| Symbol                                                      | Meaning                                                                                                               |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| ${\small k_1,\ k_{-1}}$                                     | forward / reverse rate constants for **A** ⇌ **B**                                                                    |
+| ${\small k_2}$                                              | rate constant for the **B** → **C** step                                                                              |
+| ${\small K = k_1/k_{-1}}$                                   | equilibrium constant for **A** ⇌ **B** (large ${\small K}$ means mostly **B**; small ${\small K}$ means mostly **A**) |
+| **TS₁**, **TS₂**                                            | transition states connecting **A**&**B** and **B**&**C**, respectively                                                |
+| ${\small \Delta G_1^{\ddagger},\ \Delta G_{-1}^{\ddagger}}$ | activation barriers for the forward / reverse **A** ⇌ **B** steps                                                     |
+| ${\small \Delta G_2^{\ddagger}}$                            | activation barrier for the **B** → **C** step                                                                         |
+| ${\small \Delta G_{\text{eff}}^{\ddagger}}$                 | the one _effective_ barrier that sets how fast **C** actually forms                                                   |
 
 <br>
 
-Each barrier ${\small \Delta G_i^{\ddagger}}$  links to its rate constant ${\small k_i}$ through transition-state theory, ${\small k_i = \tfrac{k_B T}{h}\,e^{-\Delta G_i^{\ddagger}/RT}}$.
+Each barrier ${\small \Delta G_i^{\ddagger}}$ links to its rate constant ${\small k_i}$ through transition-state theory, ${\small k_i = \tfrac{k_B T}{h}\,e^{-\Delta G_i^{\ddagger}/RT}}$.
 
 How does the relative energy of all these species and transition states determine the rate of formation of **C**? And under what condition can the formation of **C** be suppressed entirely? This textbook-looking question turns out to be far from trivial. It is exactly what we needed to answer in our recent paper ([JACS 2026](https://doi.org/10.1021/jacs.6c01648)) to explain why a TAMM-type reaction could stop at the free thiol product (i.e. **A**) instead of forming the "dead-end" thiazoline (i.e. **C**).
 
@@ -41,12 +41,14 @@ How does the relative energy of all these species and transition states determin
 Look at an energy profile for **A** ⇌ **B** → **C** and it is easy to reach for some half-correct answers:
 
 ##### Reading the energies off the reaction profile.
+
 - **Guess 1 ${\small \Delta G_{\text{eff}}^{\ddagger}}$ = ${\small \Delta G_2^{\ddagger}}$:** Species **C** is made by climbing ${\small \Delta G_2^{\ddagger}}$ out of **B**, so a natural guess is that this is the barrier. But since only some of the material is sitting as **B** at any moment, while the rest is **A**, a rate that ignored this cannot be right.
 
-- **Guess 2 ${\small \Delta G_{\text{eff}}^{\ddagger}}$ = *E*(TS₂)–*E*(A):**  A related guess fixes that halfway. If **A** is lower in energy than **B** — which is often the case, and is exactly the picture that invites this guess — then **A** looks like a resting state (lowest energy point), and **TS₂** looks like the one hill left before **C**. So why not just measure the height of **TS₂** above **A**? This one is closer, but this guess quietly assumes that is always true, and stops working the moment **B** becomes competitive with **A**.
+- **Guess 2 ${\small \Delta G_{\text{eff}}^{\ddagger}}$ = _E_(TS₂)–_E_(A):** A related guess fixes that halfway. If **A** is lower in energy than **B** — which is often the case, and is exactly the picture that invites this guess — then **A** looks like a resting state (lowest energy point), and **TS₂** looks like the one hill left before **C**. So why not just measure the height of **TS₂** above **A**? This one is closer, but this guess quietly assumes that is always true, and stops working the moment **B** becomes competitive with **A**.
 
 ##### Reading the mechanism as two climbs.
-- **Guess 3 ${\small \Delta G_{\text{eff}}^{\ddagger}}$ = ${\small \Delta G_1^{\ddagger}+\Delta G_2^{\ddagger}}$:** A different instinct comes from thinking about the path step by step: first the molecule climbs ${\small \Delta G_1^{\ddagger}}$  to get from **A** to **TS₁**, then it climbs ${\small \Delta G_2^{\ddagger}}$  to get from **B** to **TS₂** — so add them, ${\small \Delta G_1^{\ddagger}+\Delta G_2^{\ddagger}}$. This one is, however, never correct, as it treats **B** as if it were at the same height as **TS₁**, and never lets the system descend into the valley at **B** before climbing out. 
+
+- **Guess 3 ${\small \Delta G_{\text{eff}}^{\ddagger}}$ = ${\small \Delta G_1^{\ddagger}+\Delta G_2^{\ddagger}}$:** A different instinct comes from thinking about the path step by step: first the molecule climbs ${\small \Delta G_1^{\ddagger}}$ to get from **A** to **TS₁**, then it climbs ${\small \Delta G_2^{\ddagger}}$ to get from **B** to **TS₂** — so add them, ${\small \Delta G_1^{\ddagger}+\Delta G_2^{\ddagger}}$. This one is, however, never correct, as it treats **B** as if it were at the same height as **TS₁**, and never lets the system descend into the valley at **B** before climbing out.
 
 So: **not ${\small \Delta G_2^{\ddagger}}$ alone, not simply the height of TS₂ above A, and not ${\small \Delta G_1^{\ddagger}+\Delta G_2^{\ddagger}}$. What is ${\small \Delta G^{\ddagger}_{\text{eff}}}$, then?**
 
@@ -72,7 +74,7 @@ ${\small \Delta G_2^{\ddagger}}$ is still in there, but with a non-zero correcti
 
 ## Seeing it move
 
-Drag the three barrier sliders below. The plot shows the free-energy profile together with all four answers: the three tempting guesses (dotted lines) and the true effective barrier (dashed red). Watch how the true line moves between the guesses as ${\small K}$  changes, and note that it only ever touches two of them — never the third.
+Drag the three barrier sliders below. The plot shows the free-energy profile together with all four answers: the three tempting guesses (dotted lines) and the true effective barrier (dashed red). Watch how the true line moves between the guesses as ${\small K}$ changes, and note that it only ever touches two of them — never the third.
 
 <div id="keff-widget" style="border:1px solid var(--global-divider-color,#e0e0e0);border-radius:8px;padding:1rem 1.2rem;margin:1.5rem 0;">
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.6rem 1.4rem;margin-bottom:0.8rem;">
@@ -163,13 +165,13 @@ Drag the three barrier sliders below. The plot shows the free-energy profile tog
 
 ## Two limits, and why each guess is half right
 
-- **Large ${\small K}$** (mostly **B**): the correction term ***RT*ln(1 + 1/*K*)** vanishes and **Δ*G*<sup>‡</sup><sub>eff</sub> → Δ*G*<sup>‡</sup><sub>2</sub>**. This is Guess 1's regime. When almost everything is already **B**, waiting for **A** to become **B** costs nothing, so the only barrier that matters is the one leaving **B**.
+- **Large ${\small K}$** (mostly **B**): the correction term ***RT*ln(1 + 1/_K_)** vanishes and **Δ*G*<sup>‡</sup><sub>eff</sub> → Δ*G*<sup>‡</sup><sub>2</sub>**. This is Guess 1's regime. When almost everything is already **B**, waiting for **A** to become **B** costs nothing, so the only barrier that matters is the one leaving **B**.
 
-- **Small ${\small K}$** (mostly **A**): the correction term approximates the energy gap between **B** and **A**, so **Δ*G*<sup>‡</sup><sub>eff</sub>** approaches **Δ*G*<sup>‡</sup><sub>2</sub>** plus that gap — which is basically the height of **TS₂** above **A** (i.e. Guess 2). This is not a coincidence: when **A** truly is the resting state, reading the barrier as the highest point above it is the right thing to do. The Guess fails only where it silently assumes this is *always* true. (It should be noted that the familiar steady-state approximation gives this limiting answer as well, but based on a different assumption.)
+- **Small ${\small K}$** (mostly **A**): the correction term approximates the energy gap between **B** and **A**, so **Δ*G*<sup>‡</sup><sub>eff</sub>** approaches **Δ*G*<sup>‡</sup><sub>2</sub>** plus that gap — which is basically the height of **TS₂** above **A** (i.e. Guess 2). This is not a coincidence: when **A** truly is the resting state, reading the barrier as the highest point above it is the right thing to do. The Guess fails only where it silently assumes this is _always_ true. (It should be noted that the familiar steady-state approximation gives this limiting answer as well, but based on a different assumption.)
 
 - **Guess 3 is just wrong.** It overshoots the true effective barrier at every value of ${\small K}$. There is no regime where "add both barriers" is the correct move, because the path never actually climbs ${\small \Delta G_1^{\ddagger}}$ and ${\small \Delta G_2^{\ddagger}}$ back to back; it comes back down to **B** first.
 
-So, while Guess 3 is incorrect, Guesses 1 and 2 are not really wrong so much as incomplete: each is the right answer in its own corner, and the true barrier moves continuously between them as ${\small K}$  changes.
+So, while Guess 3 is incorrect, Guesses 1 and 2 are not really wrong so much as incomplete: each is the right answer in its own corner, and the true barrier moves continuously between them as ${\small K}$ changes.
 
 <br>
 
@@ -200,13 +202,13 @@ $$
 \frac{d[\mathsf{C}]}{dt} = k_2[\mathsf{B}],
 $$
 
-with \[**A**\](0) = *a*<sub>0</sub>, \[**B**\](0) = 0, and \[**C**\](0) = 0.
+with \[**A**\](0) = _a_<sub>0</sub>, \[**B**\](0) = 0, and \[**C**\](0) = 0.
 
 <br>
 
 ### Exact solution via eigenvalues
 
-Because \[**A**\] + \[**B**\] + \[**C**\] = *a*<sub>0</sub>, we only need the first two equations. In matrix form,
+Because \[**A**\] + \[**B**\] + \[**C**\] = _a_<sub>0</sub>, we only need the first two equations. In matrix form,
 
 $$
 \frac{d}{dt}\begin{bmatrix}[\mathsf{A}]\\ {[\mathsf{B}]}\end{bmatrix}
@@ -284,10 +286,10 @@ $$
 
 since ${\small K=k_1/k_{-1}=e^{-(\Delta G_1^{\ddagger}-\Delta G_{-1}^{\ddagger})/RT}}$.
 
-The two limiting cases discussed above follow directly by taking ${\small K\gg1}$ (mostly **B**) and ${\small K\ll1}$ (mostly **A**); in general, since ***RT*ln(1 + 1/*K*)** is a positive term, ${\small \Delta G_{\text{eff}}^{\ddagger}}$ is greater than ${\small \Delta G_{\text{2}}^{\ddagger}}$.
+The two limiting cases discussed above follow directly by taking ${\small K\gg1}$ (mostly **B**) and ${\small K\ll1}$ (mostly **A**); in general, since ***RT*ln(1 + 1/_K_)** is a positive term, ${\small \Delta G_{\text{eff}}^{\ddagger}}$ is greater than ${\small \Delta G_{\text{2}}^{\ddagger}}$.
 
 </details>
 
 ---
 
-*The analysis on this page underpins the mechanistic rationalization in [JACS 2026, 148, 18020](https://doi.org/10.1021/jacs.6c01648). If you spot an error in the derivation, I'd be glad to hear about it.*
+_The analysis on this page underpins the mechanistic rationalization in [JACS 2026, 148, 18020](https://doi.org/10.1021/jacs.6c01648). If you spot an error in the derivation, I'd be glad to hear about it._

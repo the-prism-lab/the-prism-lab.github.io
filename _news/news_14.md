@@ -10,7 +10,7 @@ Anna’s first paper **Triplet-Forming Thionated Donor–Acceptor Chromophores f
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0 text-center">
     {% include figure.liquid
-      path="assets/img/EurJOC_2021_TOC.jpg" 
+      path="assets/img/EurJOC_2021_TOC.jpg"
       alt="EurJOC 2021 Table of Contents"
       width="258"
       height="170"

@@ -12,7 +12,7 @@ It was a great pleasure to write about **nucleobase self-assembly** (DOI: [10.10
     {% include figure.liquid
       path="assets/img/base-pairing.jpg"
       alt="Nucleobase self-assembly illustration"
-      width="150" 
+      width="150"
       class="img-fluid rounded z-depth-1 mx-auto d-block"
       zoomable=true
     %}

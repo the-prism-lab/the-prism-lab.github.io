@@ -10,9 +10,9 @@ As the school partially reopens to provide a hybrid model of education this autu
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0 text-center">
     {% include figure.liquid
-      path="assets/img/IMG_6116-scaled.jpg" 
+      path="assets/img/IMG_6116-scaled.jpg"
       alt="Wearing mask for hybrid education"
-      width="150" 
+      width="150"
       class="img-fluid rounded z-depth-1 mx-auto d-block"
       zoomable=true
     %}

@@ -10,7 +10,7 @@ We are so happy to see our **first computational paper** _Why does thionating a 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0 text-center">
     {% include figure.liquid
-      path="assets/img/PCCP_2022_TOC.png" 
+      path="assets/img/PCCP_2022_TOC.png"
       alt="PCCP 2022 Table of Contents"
       width="272"
       height="152"
