@@ -164,3 +164,92 @@ body > div.container.mt-5 {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-composite: intersect;
 }
+
+/* Append to _sass/_custom.scss */
+.member-group {
+  margin: 2rem 0 1rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.member-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; /* crops to a square automatically */
+  object-position: center 20%; /* keep faces in frame */
+  background: var(--global-divider-color);
+}
+
+.member-body {
+  padding: 0.9rem 1rem 1rem;
+  font-size: 0.9rem;
+}
+
+.member-name {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.member-role {
+  color: var(--global-theme-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.member-topic {
+  font-style: italic;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.4rem;
+}
+
+.member-bio {
+  margin: 0 0 0.5rem;
+  color: var(--global-text-color);
+  line-height: 1.4;
+}
+
+.member-name-zh {
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--global-text-color-light);
+}
+
+.member-email {
+  font-size: 0.85rem;
+  margin-left: 0.15rem;
+  white-space: nowrap;
+}
+
+.member-join {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--global-card-bg-color);
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 12px;
+}
+
+.member-join h4 {
+  margin-top: 0;
+}
+
+.member-join p {
+  margin-bottom: 0;
+}
+
+.member-grid + p {
+  margin-top: 2.5rem;
+}

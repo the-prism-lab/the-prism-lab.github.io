@@ -1,0 +1,126 @@
+# Lab members. One block per person; keep all 9 keys in this order.
+# Leave a value empty (nothing after the colon) to hide it on the page.
+# name_zh: Chinese name, shown in parentheses after the English name
+# group: postdoc | phd | master | undergrad   (decides the section)
+# photo: file name inside assets/img/members/  (empty -> placeholder.svg)
+# Order inside each group = order shown on the page.
+
+- name: Dagninet Yeshiwas Alene
+  name_zh:
+  role: Postdoctoral associate
+  group: postdoc
+  photo: dagninet_yeshiwas_alene.jpg
+  email: dagnelook@gmail.com
+  linkedin:
+  topic: Organic photosensitizers and functional chromophores
+  bio: Ph.D. in Sustainable Chemical Science and Technology (NYCU, 2023). Associate Fellow of Advance HE (AFHEA).
+
+- name: Timothy L. Cooper (at Cardiff Uni)
+  name_zh:
+  role: PhD student
+  group: phd
+  photo:
+  email:
+  linkedin:
+  topic: Triplet chromophores
+  bio:
+
+- name: Chun-Wei Hsu
+  name_zh: 徐鈞威
+  role: Master's student
+  group: master
+  photo: chun-wei_hsu_gfpgan_body.jpg
+  email: william.sc14@nycu.edu.tw
+  linkedin:
+  topic:
+  bio:
+
+- name: Yu-Wen Hung
+  name_zh: 洪于雯
+  role: Master's student
+  group: master
+  photo: yu-wen_hung.jpg
+  email: wenhyu.sc15@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: Love music.
+
+- name: Ming-Yi Jian
+  name_zh: 簡銘毅
+  role: Master's student
+  group: master
+  photo: ming-yi_jian.jpg
+  email: jane.sc14@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: Love sleeping.
+
+- name: Chieh-Chen Kuo
+  name_zh: 郭玠辰
+  role: Master's student
+  group: master
+  photo: chieh-chen_kuo.jpg
+  email: morriskuo0712.sc14@nycu.edu.tw
+  linkedin:
+  topic:
+  bio:
+
+- name: Yu-Shan Lee
+  name_zh: 李雨珊
+  role: Master's student
+  group: master
+  photo: yu-shan_lee.jpg
+  email: shan.sc15@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: 愛吃甜食、看美劇，喜歡收集各種咖啡廳！
+
+- name: Rui-Lin Liu
+  name_zh: 劉叡霖
+  role: Master's student
+  group: master
+  photo: rui-lin_liu.jpg
+  email: ruilin0124.sc15@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: 喜歡吉他、睡覺、傳說對決，養過一隻已經去鼠星的倉鼠。
+
+- name: Wei-Lun Liu
+  name_zh: 劉崴倫
+  role: Master's student
+  group: master
+  photo: wei-lun_liu.jpg
+  email: liuoscar92.sc14@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: I enjoy playing badminton, listening to music, and going to concerts in my free time. As for desserts, I love tiramisu and mint chocolate.
+
+- name: Yu-Ci Su
+  name_zh: 蘇玉奇
+  role: Master's student
+  group: master
+  photo:
+  email: l22441155@gmail.com
+  linkedin:
+  topic:
+  bio: I can shoot an arrow with my bow.
+
+- name: Yu-An Lai
+  name_zh: 賴俞安
+  role: Undergraduate
+  group: undergrad
+  photo: yu-an_lai.jpg
+  email: lyuan8026.en13@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: 20y! Love なとり (Natori) ^^;
+
+- name: Yu-Xiang Li
+  name_zh: 李宇翔
+  role: Undergraduate
+  group: undergrad
+  photo: yu-xiang_li.jpg
+  email: xu3m3vu6.sc13@nycu.edu.tw
+  linkedin:
+  topic:
+  bio: 我平常喜歡看小說、漫畫，偶爾會在晚上有空的時候去慢跑。討厭的食物是苦瓜，喜歡的食物是除了討厭的食物以外的所有食物。目前姑且算是應化系系壘的隊長，歡迎大家加入系壘。
